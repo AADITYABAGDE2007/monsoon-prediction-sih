@@ -1,0 +1,17 @@
+# Environments & Cache
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.DS_Store
+*.log
+temp_artifacts/
+
+# Secrets
+.env
+backend/.env
+
+# Massive raw artifacts exceeding GitHub 100MB limit
+backend/forecast/geojson/block_forecast_2025-09-30.geojson
+backend/forecast/production_engine/production_features_2025-09-30.parquet

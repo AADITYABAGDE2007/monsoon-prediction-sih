@@ -1,0 +1,111 @@
+{
+  "report_metadata": {
+    "report_name": "SIH26086 Scientific Forecast Report",
+    "report_version": "1.0",
+    "generated_at_utc": "2026-09-16T13:24:18.867470+00:00",
+    "forecast_date": "2025-09-30"
+  },
+  "coverage": {
+    "date_start": "2025-06-01",
+    "date_end": "2025-09-30",
+    "unique_dates": 122,
+    "unique_blocks": 7081,
+    "forecast_rows": 863882,
+    "latest_date_rows": 7081
+  },
+  "model_probability_summary": {
+    "onset_7d": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "median": 0.0
+    },
+    "onset_14d": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "median": 0.0
+    },
+    "break_7d": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "median": 0.0
+    },
+    "break_14d": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "median": 0.0
+    }
+  },
+  "calibration_summary": {
+    "per_model": {
+      "onset_7d_calibration_status": {
+        "ZERO_REGION": 7081
+      },
+      "onset_14d_calibration_status": {
+        "ZERO_REGION": 7081
+      },
+      "break_7d_calibration_status": {
+        "ZERO_REGION": 7081
+      },
+      "break_14d_calibration_status": {
+        "ZERO_REGION": 7081
+      }
+    },
+    "global": {
+      "WARNING": 7081
+    }
+  },
+  "risk_summary": {
+    "alert_levels": {
+      "GREEN": 0,
+      "YELLOW": 7081,
+      "ORANGE": 0,
+      "RED": 0
+    },
+    "confidence_levels": {
+      "NORMAL": 0,
+      "MODERATE": 0,
+      "LOW": 7081
+    },
+    "mean_combined_monsoon_risk": 0.5499999999999999,
+    "max_combined_monsoon_risk": 0.55,
+    "mean_onset_risk_score": 0.0,
+    "mean_break_risk_score": 0.0
+  },
+  "scientific_interpretation": {
+    "forecast_date": "2025-09-30",
+    "forecast_horizon": [
+      "7-day onset outlook",
+      "14-day onset outlook",
+      "7-day break outlook",
+      "14-day break outlook"
+    ],
+    "spatial_resolution": "Block-level forecast for blocks represented in the production inference matrix.",
+    "probability_interpretation": "Probabilities are the frozen calibrated model outputs from the production forecast engine.",
+    "risk_interpretation": "Combined monsoon risk is an operational decision score, not a calibrated probability.",
+    "calibration_interpretation": "Calibration status is retained explicitly. WARNING/DEGRADED states are not hidden or converted into artificial confidence.",
+    "scientific_limitations": [
+      "This report does not establish causal relationships.",
+      "Operational risk scores are not substitutes for calibrated probabilities.",
+      "Forecast skill can vary across location, season and atmospheric regime.",
+      "Calibration-domain warnings indicate that probability interpretation requires additional monitoring.",
+      "The current artifact does not justify retraining or recalibration without an independent out-of-sample calibration dataset.",
+      "The system should be interpreted together with official meteorological guidance."
+    ]
+  },
+  "artifact_lineage": {
+    "production_forecast": "forecast/production_engine/production_forecast_2025-09-30.parquet",
+    "risk_forecast": "forecast/risk/risk_alert_forecast_2025-09-30.parquet",
+    "risk_summary": "forecast/risk/risk_alert_summary_2025-09-30.csv"
+  },
+  "integrity": {
+    "probabilities_modified": false,
+    "probability_rescaling": false,
+    "model_retraining": false,
+    "calibrator_retraining": false,
+    "decision_layer_only": true
+  }
+}

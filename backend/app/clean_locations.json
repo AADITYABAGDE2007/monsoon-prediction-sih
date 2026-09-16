@@ -1,0 +1,2102 @@
+[
+  {
+    "id": 1,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Betul",
+    "panchayat": "Sadar",
+    "block_id": "BLK_00001",
+    "lat": 21.9,
+    "lon": 77.9
+  },
+  {
+    "id": 2,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Betul",
+    "panchayat": "Ganj",
+    "block_id": "BLK_00002",
+    "lat": 21.95,
+    "lon": 77.95
+  },
+  {
+    "id": 3,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Betul",
+    "panchayat": "Badora",
+    "block_id": "BLK_00003",
+    "lat": 22.0,
+    "lon": 78.0
+  },
+  {
+    "id": 4,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Betul",
+    "panchayat": "Khadan",
+    "block_id": "BLK_00004",
+    "lat": 22.049999999999997,
+    "lon": 78.05000000000001
+  },
+  {
+    "id": 5,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Betul",
+    "panchayat": "Chikhalar",
+    "block_id": "BLK_00005",
+    "lat": 22.099999999999998,
+    "lon": 78.10000000000001
+  },
+  {
+    "id": 6,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Amla",
+    "panchayat": "Bodkhi",
+    "block_id": "BLK_00006",
+    "lat": 22.15,
+    "lon": 78.15
+  },
+  {
+    "id": 7,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Amla",
+    "panchayat": "Sasundara",
+    "block_id": "BLK_00007",
+    "lat": 22.2,
+    "lon": 78.2
+  },
+  {
+    "id": 8,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Amla",
+    "panchayat": "Bordehi",
+    "block_id": "BLK_00008",
+    "lat": 22.25,
+    "lon": 78.25
+  },
+  {
+    "id": 9,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Amla",
+    "panchayat": "Kannur",
+    "block_id": "BLK_00009",
+    "lat": 22.299999999999997,
+    "lon": 78.30000000000001
+  },
+  {
+    "id": 10,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Amla",
+    "panchayat": "Rambha",
+    "block_id": "BLK_00010",
+    "lat": 22.349999999999998,
+    "lon": 78.35000000000001
+  },
+  {
+    "id": 11,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Multai",
+    "panchayat": "Pattan",
+    "block_id": "BLK_00011",
+    "lat": 22.4,
+    "lon": 78.4
+  },
+  {
+    "id": 12,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Multai",
+    "panchayat": "Dunawa",
+    "block_id": "BLK_00012",
+    "lat": 22.45,
+    "lon": 78.45
+  },
+  {
+    "id": 13,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Multai",
+    "panchayat": "Pariwar",
+    "block_id": "BLK_00013",
+    "lat": 22.5,
+    "lon": 78.5
+  },
+  {
+    "id": 14,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Multai",
+    "panchayat": "Sirvi",
+    "block_id": "BLK_00014",
+    "lat": 22.549999999999997,
+    "lon": 78.55000000000001
+  },
+  {
+    "id": 15,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Multai",
+    "panchayat": "Birul",
+    "block_id": "BLK_00015",
+    "lat": 22.599999999999998,
+    "lon": 78.60000000000001
+  },
+  {
+    "id": 16,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Bhainsdehi",
+    "panchayat": "Ghudana",
+    "block_id": "BLK_00016",
+    "lat": 22.65,
+    "lon": 78.65
+  },
+  {
+    "id": 17,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Bhainsdehi",
+    "panchayat": "Khamla",
+    "block_id": "BLK_00017",
+    "lat": 22.7,
+    "lon": 78.7
+  },
+  {
+    "id": 18,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Bhainsdehi",
+    "panchayat": "Dhaba",
+    "block_id": "BLK_00018",
+    "lat": 22.75,
+    "lon": 78.75
+  },
+  {
+    "id": 19,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Bhainsdehi",
+    "panchayat": "Kukru",
+    "block_id": "BLK_00019",
+    "lat": 22.799999999999997,
+    "lon": 78.80000000000001
+  },
+  {
+    "id": 20,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Bhainsdehi",
+    "panchayat": "Bordehi",
+    "block_id": "BLK_00020",
+    "lat": 22.849999999999998,
+    "lon": 78.85000000000001
+  },
+  {
+    "id": 21,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Chicholi",
+    "panchayat": "Alampur",
+    "block_id": "BLK_00021",
+    "lat": 22.9,
+    "lon": 78.9
+  },
+  {
+    "id": 22,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Chicholi",
+    "panchayat": "Chuna",
+    "block_id": "BLK_00022",
+    "lat": 22.95,
+    "lon": 78.95
+  },
+  {
+    "id": 23,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Chicholi",
+    "panchayat": "Bhimpur",
+    "block_id": "BLK_00023",
+    "lat": 23.0,
+    "lon": 79.0
+  },
+  {
+    "id": 24,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Chicholi",
+    "panchayat": "Malegaon",
+    "block_id": "BLK_00024",
+    "lat": 23.049999999999997,
+    "lon": 79.05000000000001
+  },
+  {
+    "id": 25,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Chicholi",
+    "panchayat": "Dhar",
+    "block_id": "BLK_00025",
+    "lat": 23.099999999999998,
+    "lon": 79.10000000000001
+  },
+  {
+    "id": 26,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Shahpur",
+    "panchayat": "Silpati",
+    "block_id": "BLK_00026",
+    "lat": 23.15,
+    "lon": 79.15
+  },
+  {
+    "id": 27,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Shahpur",
+    "panchayat": "Tara",
+    "block_id": "BLK_00027",
+    "lat": 23.2,
+    "lon": 79.2
+  },
+  {
+    "id": 28,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Shahpur",
+    "panchayat": "Dhanora",
+    "block_id": "BLK_00028",
+    "lat": 23.25,
+    "lon": 79.25
+  },
+  {
+    "id": 29,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Shahpur",
+    "panchayat": "Bhoura",
+    "block_id": "BLK_00029",
+    "lat": 23.299999999999997,
+    "lon": 79.30000000000001
+  },
+  {
+    "id": 30,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Shahpur",
+    "panchayat": "Kusumkot",
+    "block_id": "BLK_00030",
+    "lat": 23.349999999999998,
+    "lon": 79.35000000000001
+  },
+  {
+    "id": 31,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Athner",
+    "panchayat": "Godi",
+    "block_id": "BLK_00031",
+    "lat": 23.4,
+    "lon": 79.4
+  },
+  {
+    "id": 32,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Athner",
+    "panchayat": "Mandvi",
+    "block_id": "BLK_00032",
+    "lat": 23.45,
+    "lon": 79.45
+  },
+  {
+    "id": 33,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Athner",
+    "panchayat": "Sawalmendha",
+    "block_id": "BLK_00033",
+    "lat": 23.5,
+    "lon": 79.5
+  },
+  {
+    "id": 34,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Athner",
+    "panchayat": "Patan",
+    "block_id": "BLK_00034",
+    "lat": 23.549999999999997,
+    "lon": 79.55000000000001
+  },
+  {
+    "id": 35,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Athner",
+    "panchayat": "Pusli",
+    "block_id": "BLK_00035",
+    "lat": 23.599999999999998,
+    "lon": 79.60000000000001
+  },
+  {
+    "id": 36,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Ghoradongri",
+    "panchayat": "Chopna",
+    "block_id": "BLK_00036",
+    "lat": 23.65,
+    "lon": 79.65
+  },
+  {
+    "id": 37,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Ghoradongri",
+    "panchayat": "Sarni",
+    "block_id": "BLK_00037",
+    "lat": 23.7,
+    "lon": 79.7
+  },
+  {
+    "id": 38,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Ghoradongri",
+    "panchayat": "Ghodawadi",
+    "block_id": "BLK_00038",
+    "lat": 23.75,
+    "lon": 79.75
+  },
+  {
+    "id": 39,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Ghoradongri",
+    "panchayat": "Pathakhera",
+    "block_id": "BLK_00039",
+    "lat": 23.799999999999997,
+    "lon": 79.80000000000001
+  },
+  {
+    "id": 40,
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "block": "Ghoradongri",
+    "panchayat": "Kaniwara",
+    "block_id": "BLK_00040",
+    "lat": 23.849999999999998,
+    "lon": 79.85000000000001
+  },
+  {
+    "id": 41,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Phanda",
+    "panchayat": "Ratibad",
+    "block_id": "BLK_00041",
+    "lat": 23.9,
+    "lon": 79.9
+  },
+  {
+    "id": 42,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Phanda",
+    "panchayat": "Mugaliya Chhap",
+    "block_id": "BLK_00042",
+    "lat": 23.95,
+    "lon": 79.95
+  },
+  {
+    "id": 43,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Phanda",
+    "panchayat": "Khejra",
+    "block_id": "BLK_00043",
+    "lat": 24.0,
+    "lon": 80.0
+  },
+  {
+    "id": 44,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Phanda",
+    "panchayat": "Bairagarh",
+    "block_id": "BLK_00044",
+    "lat": 24.049999999999997,
+    "lon": 80.05000000000001
+  },
+  {
+    "id": 45,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Phanda",
+    "panchayat": "Tumda",
+    "block_id": "BLK_00045",
+    "lat": 24.099999999999998,
+    "lon": 80.10000000000001
+  },
+  {
+    "id": 46,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Berasia",
+    "panchayat": "Runaha",
+    "block_id": "BLK_00046",
+    "lat": 24.15,
+    "lon": 80.15
+  },
+  {
+    "id": 47,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Berasia",
+    "panchayat": "Lalariya",
+    "block_id": "BLK_00047",
+    "lat": 24.2,
+    "lon": 80.2
+  },
+  {
+    "id": 48,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Berasia",
+    "panchayat": "Gunga",
+    "block_id": "BLK_00048",
+    "lat": 24.25,
+    "lon": 80.25
+  },
+  {
+    "id": 49,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Berasia",
+    "panchayat": "Narsinghgarh",
+    "block_id": "BLK_00049",
+    "lat": 24.299999999999997,
+    "lon": 80.30000000000001
+  },
+  {
+    "id": 50,
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "block": "Berasia",
+    "panchayat": "Dhamarra",
+    "block_id": "BLK_00050",
+    "lat": 24.349999999999998,
+    "lon": 80.35000000000001
+  },
+  {
+    "id": 51,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Sehore",
+    "panchayat": "Shyampur",
+    "block_id": "BLK_00051",
+    "lat": 24.4,
+    "lon": 80.4
+  },
+  {
+    "id": 52,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Sehore",
+    "panchayat": "Bilkisganj",
+    "block_id": "BLK_00052",
+    "lat": 24.45,
+    "lon": 80.45
+  },
+  {
+    "id": 53,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Sehore",
+    "panchayat": "Doraha",
+    "block_id": "BLK_00053",
+    "lat": 24.5,
+    "lon": 80.5
+  },
+  {
+    "id": 54,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Sehore",
+    "panchayat": "Barkheda",
+    "block_id": "BLK_00054",
+    "lat": 24.549999999999997,
+    "lon": 80.55000000000001
+  },
+  {
+    "id": 55,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Sehore",
+    "panchayat": "Mahu",
+    "block_id": "BLK_00055",
+    "lat": 24.599999999999998,
+    "lon": 80.60000000000001
+  },
+  {
+    "id": 56,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ashta",
+    "panchayat": "Kothri",
+    "block_id": "BLK_00056",
+    "lat": 24.65,
+    "lon": 80.65
+  },
+  {
+    "id": 57,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ashta",
+    "panchayat": "Jawar",
+    "block_id": "BLK_00057",
+    "lat": 24.7,
+    "lon": 80.7
+  },
+  {
+    "id": 58,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ashta",
+    "panchayat": "Siddiqganj",
+    "block_id": "BLK_00058",
+    "lat": 24.75,
+    "lon": 80.75
+  },
+  {
+    "id": 59,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ashta",
+    "panchayat": "Mehatwada",
+    "block_id": "BLK_00059",
+    "lat": 24.799999999999997,
+    "lon": 80.80000000000001
+  },
+  {
+    "id": 60,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ashta",
+    "panchayat": "Bhaunra",
+    "block_id": "BLK_00060",
+    "lat": 24.849999999999998,
+    "lon": 80.85000000000001
+  },
+  {
+    "id": 61,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ichhawar",
+    "panchayat": "Diwadia",
+    "block_id": "BLK_00061",
+    "lat": 24.9,
+    "lon": 80.9
+  },
+  {
+    "id": 62,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ichhawar",
+    "panchayat": "Brijisnagar",
+    "block_id": "BLK_00062",
+    "lat": 24.95,
+    "lon": 80.95
+  },
+  {
+    "id": 63,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ichhawar",
+    "panchayat": "Arya",
+    "block_id": "BLK_00063",
+    "lat": 25.0,
+    "lon": 81.0
+  },
+  {
+    "id": 64,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ichhawar",
+    "panchayat": "Godi",
+    "block_id": "BLK_00064",
+    "lat": 25.049999999999997,
+    "lon": 81.05000000000001
+  },
+  {
+    "id": 65,
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "block": "Ichhawar",
+    "panchayat": "Richhhai",
+    "block_id": "BLK_00065",
+    "lat": 25.099999999999998,
+    "lon": 81.10000000000001
+  },
+  {
+    "id": 66,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Hoshangabad",
+    "panchayat": "Rasulia",
+    "block_id": "BLK_00066",
+    "lat": 25.15,
+    "lon": 81.15
+  },
+  {
+    "id": 67,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Hoshangabad",
+    "panchayat": "Pawarkheda",
+    "block_id": "BLK_00067",
+    "lat": 25.2,
+    "lon": 81.2
+  },
+  {
+    "id": 68,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Hoshangabad",
+    "panchayat": "Rohna",
+    "block_id": "BLK_00068",
+    "lat": 25.25,
+    "lon": 81.25
+  },
+  {
+    "id": 69,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Hoshangabad",
+    "panchayat": "Doliya",
+    "block_id": "BLK_00069",
+    "lat": 25.299999999999997,
+    "lon": 81.30000000000001
+  },
+  {
+    "id": 70,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Hoshangabad",
+    "panchayat": "Babai",
+    "block_id": "BLK_00070",
+    "lat": 25.349999999999998,
+    "lon": 81.35000000000001
+  },
+  {
+    "id": 71,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Itarsi",
+    "panchayat": "Pathrota",
+    "block_id": "BLK_00071",
+    "lat": 25.4,
+    "lon": 81.4
+  },
+  {
+    "id": 72,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Itarsi",
+    "panchayat": "Sonasawari",
+    "block_id": "BLK_00072",
+    "lat": 25.45,
+    "lon": 81.45
+  },
+  {
+    "id": 73,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Itarsi",
+    "panchayat": "Raisalpur",
+    "block_id": "BLK_00073",
+    "lat": 25.5,
+    "lon": 81.5
+  },
+  {
+    "id": 74,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Itarsi",
+    "panchayat": "Taku",
+    "block_id": "BLK_00074",
+    "lat": 25.549999999999997,
+    "lon": 81.55000000000001
+  },
+  {
+    "id": 75,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Itarsi",
+    "panchayat": "Kesla",
+    "block_id": "BLK_00075",
+    "lat": 25.599999999999998,
+    "lon": 81.60000000000001
+  },
+  {
+    "id": 76,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Pipariya",
+    "panchayat": "Bankhedi",
+    "block_id": "BLK_00076",
+    "lat": 25.65,
+    "lon": 81.65
+  },
+  {
+    "id": 77,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Pipariya",
+    "panchayat": "Matkuli",
+    "block_id": "BLK_00077",
+    "lat": 25.7,
+    "lon": 81.7
+  },
+  {
+    "id": 78,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Pipariya",
+    "panchayat": "Sohagpur",
+    "block_id": "BLK_00078",
+    "lat": 25.75,
+    "lon": 81.75
+  },
+  {
+    "id": 79,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Pipariya",
+    "panchayat": "Dhana",
+    "block_id": "BLK_00079",
+    "lat": 25.799999999999997,
+    "lon": 81.80000000000001
+  },
+  {
+    "id": 80,
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "block": "Pipariya",
+    "panchayat": "Silari",
+    "block_id": "BLK_00080",
+    "lat": 25.849999999999998,
+    "lon": 81.85000000000001
+  },
+  {
+    "id": 81,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Chhindwara",
+    "panchayat": "Kukda",
+    "block_id": "BLK_00081",
+    "lat": 25.9,
+    "lon": 77.9
+  },
+  {
+    "id": 82,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Chhindwara",
+    "panchayat": "Mani",
+    "block_id": "BLK_00082",
+    "lat": 25.95,
+    "lon": 77.95
+  },
+  {
+    "id": 83,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Chhindwara",
+    "panchayat": "Rohna",
+    "block_id": "BLK_00083",
+    "lat": 26.0,
+    "lon": 78.0
+  },
+  {
+    "id": 84,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Chhindwara",
+    "panchayat": "Chand",
+    "block_id": "BLK_00084",
+    "lat": 26.049999999999997,
+    "lon": 78.05000000000001
+  },
+  {
+    "id": 85,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Chhindwara",
+    "panchayat": "Chourai",
+    "block_id": "BLK_00085",
+    "lat": 26.099999999999998,
+    "lon": 78.10000000000001
+  },
+  {
+    "id": 86,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Parasia",
+    "panchayat": "Chandameta",
+    "block_id": "BLK_00086",
+    "lat": 26.15,
+    "lon": 78.15
+  },
+  {
+    "id": 87,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Parasia",
+    "panchayat": "Newton",
+    "block_id": "BLK_00087",
+    "lat": 26.2,
+    "lon": 78.2
+  },
+  {
+    "id": 88,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Parasia",
+    "panchayat": "Barkuhi",
+    "block_id": "BLK_00088",
+    "lat": 26.25,
+    "lon": 78.25
+  },
+  {
+    "id": 89,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Parasia",
+    "panchayat": "Dongar",
+    "block_id": "BLK_00089",
+    "lat": 26.299999999999997,
+    "lon": 78.30000000000001
+  },
+  {
+    "id": 90,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Parasia",
+    "panchayat": "Iklehra",
+    "block_id": "BLK_00090",
+    "lat": 26.349999999999998,
+    "lon": 78.35000000000001
+  },
+  {
+    "id": 91,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Sausar",
+    "panchayat": "Lodhikheda",
+    "block_id": "BLK_00091",
+    "lat": 26.4,
+    "lon": 78.4
+  },
+  {
+    "id": 92,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Sausar",
+    "panchayat": "Berdi",
+    "block_id": "BLK_00092",
+    "lat": 26.45,
+    "lon": 78.45
+  },
+  {
+    "id": 93,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Sausar",
+    "panchayat": "Mohgaon",
+    "block_id": "BLK_00093",
+    "lat": 26.5,
+    "lon": 78.5
+  },
+  {
+    "id": 94,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Sausar",
+    "panchayat": "Khamarpani",
+    "block_id": "BLK_00094",
+    "lat": 26.549999999999997,
+    "lon": 78.55000000000001
+  },
+  {
+    "id": 95,
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "block": "Sausar",
+    "panchayat": "Bichhua",
+    "block_id": "BLK_00095",
+    "lat": 26.599999999999998,
+    "lon": 78.60000000000001
+  },
+  {
+    "id": 96,
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "block": "Indore",
+    "panchayat": "Sanwer",
+    "block_id": "BLK_00096",
+    "lat": 26.65,
+    "lon": 78.65
+  },
+  {
+    "id": 97,
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "block": "Indore",
+    "panchayat": "Depalpur",
+    "block_id": "BLK_00097",
+    "lat": 26.7,
+    "lon": 78.7
+  },
+  {
+    "id": 98,
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "block": "Indore",
+    "panchayat": "Mhow",
+    "block_id": "BLK_00098",
+    "lat": 26.75,
+    "lon": 78.75
+  },
+  {
+    "id": 99,
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "block": "Indore",
+    "panchayat": "Hatod",
+    "block_id": "BLK_00099",
+    "lat": 26.799999999999997,
+    "lon": 78.80000000000001
+  },
+  {
+    "id": 100,
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "block": "Indore",
+    "panchayat": "Rau",
+    "block_id": "BLK_00100",
+    "lat": 26.849999999999998,
+    "lon": 78.85000000000001
+  },
+  {
+    "id": 101,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Nagpur Rural",
+    "panchayat": "Kamptee",
+    "block_id": "BLK_00101",
+    "lat": 21.9,
+    "lon": 78.9
+  },
+  {
+    "id": 102,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Nagpur Rural",
+    "panchayat": "Hingna",
+    "block_id": "BLK_00102",
+    "lat": 21.95,
+    "lon": 78.95
+  },
+  {
+    "id": 103,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Nagpur Rural",
+    "panchayat": "Wadi",
+    "block_id": "BLK_00103",
+    "lat": 22.0,
+    "lon": 79.0
+  },
+  {
+    "id": 104,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Nagpur Rural",
+    "panchayat": "Besa",
+    "block_id": "BLK_00104",
+    "lat": 22.049999999999997,
+    "lon": 79.05000000000001
+  },
+  {
+    "id": 105,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Nagpur Rural",
+    "panchayat": "Koradi",
+    "block_id": "BLK_00105",
+    "lat": 22.099999999999998,
+    "lon": 79.10000000000001
+  },
+  {
+    "id": 106,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Katol",
+    "panchayat": "Narkhed",
+    "block_id": "BLK_00106",
+    "lat": 22.15,
+    "lon": 79.15
+  },
+  {
+    "id": 107,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Katol",
+    "panchayat": "Kondhali",
+    "block_id": "BLK_00107",
+    "lat": 22.2,
+    "lon": 79.2
+  },
+  {
+    "id": 108,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Katol",
+    "panchayat": "Paradsinga",
+    "block_id": "BLK_00108",
+    "lat": 22.25,
+    "lon": 79.25
+  },
+  {
+    "id": 109,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Katol",
+    "panchayat": "Metpanjra",
+    "block_id": "BLK_00109",
+    "lat": 22.299999999999997,
+    "lon": 79.30000000000001
+  },
+  {
+    "id": 110,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Katol",
+    "panchayat": "Sawargaon",
+    "block_id": "BLK_00110",
+    "lat": 22.349999999999998,
+    "lon": 79.35000000000001
+  },
+  {
+    "id": 111,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Ramtek",
+    "panchayat": "Mansar",
+    "block_id": "BLK_00111",
+    "lat": 22.4,
+    "lon": 79.4
+  },
+  {
+    "id": 112,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Ramtek",
+    "panchayat": "Mouda",
+    "block_id": "BLK_00112",
+    "lat": 22.45,
+    "lon": 79.45
+  },
+  {
+    "id": 113,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Ramtek",
+    "panchayat": "Parseoni",
+    "block_id": "BLK_00113",
+    "lat": 22.5,
+    "lon": 79.5
+  },
+  {
+    "id": 114,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Ramtek",
+    "panchayat": "Aroli",
+    "block_id": "BLK_00114",
+    "lat": 22.549999999999997,
+    "lon": 79.55000000000001
+  },
+  {
+    "id": 115,
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "block": "Ramtek",
+    "panchayat": "Bhandara",
+    "block_id": "BLK_00115",
+    "lat": 22.599999999999998,
+    "lon": 79.60000000000001
+  },
+  {
+    "id": 116,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Amravati",
+    "panchayat": "Badnera",
+    "block_id": "BLK_00116",
+    "lat": 22.65,
+    "lon": 79.65
+  },
+  {
+    "id": 117,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Amravati",
+    "panchayat": "Walgaon",
+    "block_id": "BLK_00117",
+    "lat": 22.7,
+    "lon": 79.7
+  },
+  {
+    "id": 118,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Amravati",
+    "panchayat": "Bhatkuli",
+    "block_id": "BLK_00118",
+    "lat": 22.75,
+    "lon": 79.75
+  },
+  {
+    "id": 119,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Amravati",
+    "panchayat": "Nandgaon",
+    "block_id": "BLK_00119",
+    "lat": 22.799999999999997,
+    "lon": 79.80000000000001
+  },
+  {
+    "id": 120,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Amravati",
+    "panchayat": "Chandur",
+    "block_id": "BLK_00120",
+    "lat": 22.849999999999998,
+    "lon": 79.85000000000001
+  },
+  {
+    "id": 121,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Achalpur",
+    "panchayat": "Paratwada",
+    "block_id": "BLK_00121",
+    "lat": 22.9,
+    "lon": 79.9
+  },
+  {
+    "id": 122,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Achalpur",
+    "panchayat": "Shirala",
+    "block_id": "BLK_00122",
+    "lat": 22.95,
+    "lon": 79.95
+  },
+  {
+    "id": 123,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Achalpur",
+    "panchayat": "Pathrot",
+    "block_id": "BLK_00123",
+    "lat": 23.0,
+    "lon": 80.0
+  },
+  {
+    "id": 124,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Achalpur",
+    "panchayat": "Chandurbazar",
+    "block_id": "BLK_00124",
+    "lat": 23.049999999999997,
+    "lon": 80.05000000000001
+  },
+  {
+    "id": 125,
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "block": "Achalpur",
+    "panchayat": "Morshi",
+    "block_id": "BLK_00125",
+    "lat": 23.099999999999998,
+    "lon": 80.10000000000001
+  },
+  {
+    "id": 126,
+    "state": "Maharashtra",
+    "district": "Yavatmal",
+    "block": "Yavatmal",
+    "panchayat": "Darwha",
+    "block_id": "BLK_00126",
+    "lat": 23.15,
+    "lon": 80.15
+  },
+  {
+    "id": 127,
+    "state": "Maharashtra",
+    "district": "Yavatmal",
+    "block": "Yavatmal",
+    "panchayat": "Digras",
+    "block_id": "BLK_00127",
+    "lat": 23.2,
+    "lon": 80.2
+  },
+  {
+    "id": 128,
+    "state": "Maharashtra",
+    "district": "Yavatmal",
+    "block": "Yavatmal",
+    "panchayat": "Pusad",
+    "block_id": "BLK_00128",
+    "lat": 23.25,
+    "lon": 80.25
+  },
+  {
+    "id": 129,
+    "state": "Maharashtra",
+    "district": "Yavatmal",
+    "block": "Yavatmal",
+    "panchayat": "Umarkhed",
+    "block_id": "BLK_00129",
+    "lat": 23.299999999999997,
+    "lon": 80.30000000000001
+  },
+  {
+    "id": 130,
+    "state": "Maharashtra",
+    "district": "Yavatmal",
+    "block": "Yavatmal",
+    "panchayat": "Wani",
+    "block_id": "BLK_00130",
+    "lat": 23.349999999999998,
+    "lon": 80.35000000000001
+  },
+  {
+    "id": 131,
+    "state": "Maharashtra",
+    "district": "Wardha",
+    "block": "Wardha",
+    "panchayat": "Deoli",
+    "block_id": "BLK_00131",
+    "lat": 23.4,
+    "lon": 80.4
+  },
+  {
+    "id": 132,
+    "state": "Maharashtra",
+    "district": "Wardha",
+    "block": "Wardha",
+    "panchayat": "Seloo",
+    "block_id": "BLK_00132",
+    "lat": 23.45,
+    "lon": 80.45
+  },
+  {
+    "id": 133,
+    "state": "Maharashtra",
+    "district": "Wardha",
+    "block": "Wardha",
+    "panchayat": "Arvi",
+    "block_id": "BLK_00133",
+    "lat": 23.5,
+    "lon": 80.5
+  },
+  {
+    "id": 134,
+    "state": "Maharashtra",
+    "district": "Wardha",
+    "block": "Wardha",
+    "panchayat": "Karanja",
+    "block_id": "BLK_00134",
+    "lat": 23.549999999999997,
+    "lon": 80.55000000000001
+  },
+  {
+    "id": 135,
+    "state": "Maharashtra",
+    "district": "Wardha",
+    "block": "Wardha",
+    "panchayat": "Hinganghat",
+    "block_id": "BLK_00135",
+    "lat": 23.599999999999998,
+    "lon": 80.60000000000001
+  },
+  {
+    "id": 136,
+    "state": "Rajasthan",
+    "district": "Kota",
+    "block": "Kota",
+    "panchayat": "Ladpura",
+    "block_id": "BLK_00136",
+    "lat": 23.65,
+    "lon": 80.65
+  },
+  {
+    "id": 137,
+    "state": "Rajasthan",
+    "district": "Kota",
+    "block": "Kota",
+    "panchayat": "Sangod",
+    "block_id": "BLK_00137",
+    "lat": 23.7,
+    "lon": 80.7
+  },
+  {
+    "id": 138,
+    "state": "Rajasthan",
+    "district": "Kota",
+    "block": "Kota",
+    "panchayat": "Digod",
+    "block_id": "BLK_00138",
+    "lat": 23.75,
+    "lon": 80.75
+  },
+  {
+    "id": 139,
+    "state": "Rajasthan",
+    "district": "Kota",
+    "block": "Kota",
+    "panchayat": "Ramganj Mandi",
+    "block_id": "BLK_00139",
+    "lat": 23.799999999999997,
+    "lon": 80.80000000000001
+  },
+  {
+    "id": 140,
+    "state": "Rajasthan",
+    "district": "Kota",
+    "block": "Kota",
+    "panchayat": "Itawa",
+    "block_id": "BLK_00140",
+    "lat": 23.849999999999998,
+    "lon": 80.85000000000001
+  },
+  {
+    "id": 141,
+    "state": "Rajasthan",
+    "district": "Jhalawar",
+    "block": "Jhalawar",
+    "panchayat": "Jhalrapatan",
+    "block_id": "BLK_00141",
+    "lat": 23.9,
+    "lon": 80.9
+  },
+  {
+    "id": 142,
+    "state": "Rajasthan",
+    "district": "Jhalawar",
+    "block": "Jhalawar",
+    "panchayat": "Khanpur",
+    "block_id": "BLK_00142",
+    "lat": 23.95,
+    "lon": 80.95
+  },
+  {
+    "id": 143,
+    "state": "Rajasthan",
+    "district": "Jhalawar",
+    "block": "Jhalawar",
+    "panchayat": "Manohar Thana",
+    "block_id": "BLK_00143",
+    "lat": 24.0,
+    "lon": 81.0
+  },
+  {
+    "id": 144,
+    "state": "Rajasthan",
+    "district": "Jhalawar",
+    "block": "Jhalawar",
+    "panchayat": "Pirawa",
+    "block_id": "BLK_00144",
+    "lat": 24.049999999999997,
+    "lon": 81.05000000000001
+  },
+  {
+    "id": 145,
+    "state": "Rajasthan",
+    "district": "Jhalawar",
+    "block": "Jhalawar",
+    "panchayat": "Aklera",
+    "block_id": "BLK_00145",
+    "lat": 24.099999999999998,
+    "lon": 81.10000000000001
+  },
+  {
+    "id": 146,
+    "state": "Gujarat",
+    "district": "Surat",
+    "block": "Surat",
+    "panchayat": "Choryasi",
+    "block_id": "BLK_00146",
+    "lat": 24.15,
+    "lon": 81.15
+  },
+  {
+    "id": 147,
+    "state": "Gujarat",
+    "district": "Surat",
+    "block": "Surat",
+    "panchayat": "Olpad",
+    "block_id": "BLK_00147",
+    "lat": 24.2,
+    "lon": 81.2
+  },
+  {
+    "id": 148,
+    "state": "Gujarat",
+    "district": "Surat",
+    "block": "Surat",
+    "panchayat": "Kamrej",
+    "block_id": "BLK_00148",
+    "lat": 24.25,
+    "lon": 81.25
+  },
+  {
+    "id": 149,
+    "state": "Gujarat",
+    "district": "Surat",
+    "block": "Surat",
+    "panchayat": "Bardoli",
+    "block_id": "BLK_00149",
+    "lat": 24.299999999999997,
+    "lon": 81.30000000000001
+  },
+  {
+    "id": 150,
+    "state": "Gujarat",
+    "district": "Surat",
+    "block": "Surat",
+    "panchayat": "Mahuva",
+    "block_id": "BLK_00150",
+    "lat": 24.349999999999998,
+    "lon": 81.35000000000001
+  },
+  {
+    "id": 151,
+    "state": "Gujarat",
+    "district": "Vadodara",
+    "block": "Vadodara",
+    "panchayat": "Padra",
+    "block_id": "BLK_00151",
+    "lat": 24.4,
+    "lon": 81.4
+  },
+  {
+    "id": 152,
+    "state": "Gujarat",
+    "district": "Vadodara",
+    "block": "Vadodara",
+    "panchayat": "Karjan",
+    "block_id": "BLK_00152",
+    "lat": 24.45,
+    "lon": 81.45
+  },
+  {
+    "id": 153,
+    "state": "Gujarat",
+    "district": "Vadodara",
+    "block": "Vadodara",
+    "panchayat": "Dabhoi",
+    "block_id": "BLK_00153",
+    "lat": 24.5,
+    "lon": 81.5
+  },
+  {
+    "id": 154,
+    "state": "Gujarat",
+    "district": "Vadodara",
+    "block": "Vadodara",
+    "panchayat": "Waghodia",
+    "block_id": "BLK_00154",
+    "lat": 24.549999999999997,
+    "lon": 81.55000000000001
+  },
+  {
+    "id": 155,
+    "state": "Gujarat",
+    "district": "Vadodara",
+    "block": "Vadodara",
+    "panchayat": "Savli",
+    "block_id": "BLK_00155",
+    "lat": 24.599999999999998,
+    "lon": 81.60000000000001
+  },
+  {
+    "id": 156,
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "block": "Ludhiana",
+    "panchayat": "Samrala",
+    "block_id": "BLK_00156",
+    "lat": 24.65,
+    "lon": 81.65
+  },
+  {
+    "id": 157,
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "block": "Ludhiana",
+    "panchayat": "Khanna",
+    "block_id": "BLK_00157",
+    "lat": 24.7,
+    "lon": 81.7
+  },
+  {
+    "id": 158,
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "block": "Ludhiana",
+    "panchayat": "Jagraon",
+    "block_id": "BLK_00158",
+    "lat": 24.75,
+    "lon": 81.75
+  },
+  {
+    "id": 159,
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "block": "Ludhiana",
+    "panchayat": "Raikot",
+    "block_id": "BLK_00159",
+    "lat": 24.799999999999997,
+    "lon": 81.80000000000001
+  },
+  {
+    "id": 160,
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "block": "Ludhiana",
+    "panchayat": "Payal",
+    "block_id": "BLK_00160",
+    "lat": 24.849999999999998,
+    "lon": 81.85000000000001
+  },
+  {
+    "id": 161,
+    "state": "Punjab",
+    "district": "Patiala",
+    "block": "Patiala",
+    "panchayat": "Nabha",
+    "block_id": "BLK_00161",
+    "lat": 24.9,
+    "lon": 77.9
+  },
+  {
+    "id": 162,
+    "state": "Punjab",
+    "district": "Patiala",
+    "block": "Patiala",
+    "panchayat": "Rajpura",
+    "block_id": "BLK_00162",
+    "lat": 24.95,
+    "lon": 77.95
+  },
+  {
+    "id": 163,
+    "state": "Punjab",
+    "district": "Patiala",
+    "block": "Patiala",
+    "panchayat": "Samana",
+    "block_id": "BLK_00163",
+    "lat": 25.0,
+    "lon": 78.0
+  },
+  {
+    "id": 164,
+    "state": "Punjab",
+    "district": "Patiala",
+    "block": "Patiala",
+    "panchayat": "Patran",
+    "block_id": "BLK_00164",
+    "lat": 25.049999999999997,
+    "lon": 78.05000000000001
+  },
+  {
+    "id": 165,
+    "state": "Punjab",
+    "district": "Patiala",
+    "block": "Patiala",
+    "panchayat": "Bhunerheri",
+    "block_id": "BLK_00165",
+    "lat": 25.099999999999998,
+    "lon": 78.10000000000001
+  },
+  {
+    "id": 166,
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "block": "Secunderabad",
+    "panchayat": "Alwal",
+    "block_id": "BLK_00166",
+    "lat": 25.15,
+    "lon": 78.15
+  },
+  {
+    "id": 167,
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "block": "Secunderabad",
+    "panchayat": "Malkajgiri",
+    "block_id": "BLK_00167",
+    "lat": 25.2,
+    "lon": 78.2
+  },
+  {
+    "id": 168,
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "block": "Secunderabad",
+    "panchayat": "Uppal",
+    "block_id": "BLK_00168",
+    "lat": 25.25,
+    "lon": 78.25
+  },
+  {
+    "id": 169,
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "block": "Secunderabad",
+    "panchayat": "Ghatkesar",
+    "block_id": "BLK_00169",
+    "lat": 25.299999999999997,
+    "lon": 78.30000000000001
+  },
+  {
+    "id": 170,
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "block": "Secunderabad",
+    "panchayat": "Keesara",
+    "block_id": "BLK_00170",
+    "lat": 25.349999999999998,
+    "lon": 78.35000000000001
+  },
+  {
+    "id": 171,
+    "state": "Telangana",
+    "district": "Warangal",
+    "block": "Warangal",
+    "panchayat": "Hanamkonda",
+    "block_id": "BLK_00171",
+    "lat": 25.4,
+    "lon": 78.4
+  },
+  {
+    "id": 172,
+    "state": "Telangana",
+    "district": "Warangal",
+    "block": "Warangal",
+    "panchayat": "Kazipet",
+    "block_id": "BLK_00172",
+    "lat": 25.45,
+    "lon": 78.45
+  },
+  {
+    "id": 173,
+    "state": "Telangana",
+    "district": "Warangal",
+    "block": "Warangal",
+    "panchayat": "Wardhannapet",
+    "block_id": "BLK_00173",
+    "lat": 25.5,
+    "lon": 78.5
+  },
+  {
+    "id": 174,
+    "state": "Telangana",
+    "district": "Warangal",
+    "block": "Warangal",
+    "panchayat": "Parkal",
+    "block_id": "BLK_00174",
+    "lat": 25.549999999999997,
+    "lon": 78.55000000000001
+  },
+  {
+    "id": 175,
+    "state": "Telangana",
+    "district": "Warangal",
+    "block": "Warangal",
+    "panchayat": "Narsampet",
+    "block_id": "BLK_00175",
+    "lat": 25.599999999999998,
+    "lon": 78.60000000000001
+  },
+  {
+    "id": 176,
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "block": "Machilipatnam",
+    "panchayat": "Gudivada",
+    "block_id": "BLK_00176",
+    "lat": 25.65,
+    "lon": 78.65
+  },
+  {
+    "id": 177,
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "block": "Machilipatnam",
+    "panchayat": "Nuzvid",
+    "block_id": "BLK_00177",
+    "lat": 25.7,
+    "lon": 78.7
+  },
+  {
+    "id": 178,
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "block": "Machilipatnam",
+    "panchayat": "Vuyyuru",
+    "block_id": "BLK_00178",
+    "lat": 25.75,
+    "lon": 78.75
+  },
+  {
+    "id": 179,
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "block": "Machilipatnam",
+    "panchayat": "Pamarru",
+    "block_id": "BLK_00179",
+    "lat": 25.799999999999997,
+    "lon": 78.80000000000001
+  },
+  {
+    "id": 180,
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "block": "Machilipatnam",
+    "panchayat": "Bantumilli",
+    "block_id": "BLK_00180",
+    "lat": 25.849999999999998,
+    "lon": 78.85000000000001
+  },
+  {
+    "id": 181,
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "block": "Guntur",
+    "panchayat": "Tenali",
+    "block_id": "BLK_00181",
+    "lat": 25.9,
+    "lon": 78.9
+  },
+  {
+    "id": 182,
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "block": "Guntur",
+    "panchayat": "Narasaraopet",
+    "block_id": "BLK_00182",
+    "lat": 25.95,
+    "lon": 78.95
+  },
+  {
+    "id": 183,
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "block": "Guntur",
+    "panchayat": "Mangalagiri",
+    "block_id": "BLK_00183",
+    "lat": 26.0,
+    "lon": 79.0
+  },
+  {
+    "id": 184,
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "block": "Guntur",
+    "panchayat": "Bapatla",
+    "block_id": "BLK_00184",
+    "lat": 26.049999999999997,
+    "lon": 79.05000000000001
+  },
+  {
+    "id": 185,
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "block": "Guntur",
+    "panchayat": "Sattenapalle",
+    "block_id": "BLK_00185",
+    "lat": 26.099999999999998,
+    "lon": 79.10000000000001
+  },
+  {
+    "id": 186,
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "block": "Varanasi",
+    "panchayat": "Pindra",
+    "block_id": "BLK_00186",
+    "lat": 26.15,
+    "lon": 79.15
+  },
+  {
+    "id": 187,
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "block": "Varanasi",
+    "panchayat": "Sewapuri",
+    "block_id": "BLK_00187",
+    "lat": 26.2,
+    "lon": 79.2
+  },
+  {
+    "id": 188,
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "block": "Varanasi",
+    "panchayat": "Araziline",
+    "block_id": "BLK_00188",
+    "lat": 26.25,
+    "lon": 79.25
+  },
+  {
+    "id": 189,
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "block": "Varanasi",
+    "panchayat": "Kashi Vidyapeeth",
+    "block_id": "BLK_00189",
+    "lat": 26.299999999999997,
+    "lon": 79.30000000000001
+  },
+  {
+    "id": 190,
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "block": "Varanasi",
+    "panchayat": "Chiraigaon",
+    "block_id": "BLK_00190",
+    "lat": 26.349999999999998,
+    "lon": 79.35000000000001
+  },
+  {
+    "id": 191,
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "block": "Prayagraj",
+    "panchayat": "Soraon",
+    "block_id": "BLK_00191",
+    "lat": 26.4,
+    "lon": 79.4
+  },
+  {
+    "id": 192,
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "block": "Prayagraj",
+    "panchayat": "Phulpur",
+    "block_id": "BLK_00192",
+    "lat": 26.45,
+    "lon": 79.45
+  },
+  {
+    "id": 193,
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "block": "Prayagraj",
+    "panchayat": "Handia",
+    "block_id": "BLK_00193",
+    "lat": 26.5,
+    "lon": 79.5
+  },
+  {
+    "id": 194,
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "block": "Prayagraj",
+    "panchayat": "Karchhana",
+    "block_id": "BLK_00194",
+    "lat": 26.549999999999997,
+    "lon": 79.55000000000001
+  },
+  {
+    "id": 195,
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "block": "Prayagraj",
+    "panchayat": "Meja",
+    "block_id": "BLK_00195",
+    "lat": 26.599999999999998,
+    "lon": 79.60000000000001
+  },
+  {
+    "id": 196,
+    "state": "Bihar",
+    "district": "Patna",
+    "block": "Patna",
+    "panchayat": "Danapur",
+    "block_id": "BLK_00196",
+    "lat": 26.65,
+    "lon": 79.65
+  },
+  {
+    "id": 197,
+    "state": "Bihar",
+    "district": "Patna",
+    "block": "Patna",
+    "panchayat": "Phulwari",
+    "block_id": "BLK_00197",
+    "lat": 26.7,
+    "lon": 79.7
+  },
+  {
+    "id": 198,
+    "state": "Bihar",
+    "district": "Patna",
+    "block": "Patna",
+    "panchayat": "Fatwah",
+    "block_id": "BLK_00198",
+    "lat": 26.75,
+    "lon": 79.75
+  },
+  {
+    "id": 199,
+    "state": "Bihar",
+    "district": "Patna",
+    "block": "Patna",
+    "panchayat": "Bakhtiarpur",
+    "block_id": "BLK_00199",
+    "lat": 26.799999999999997,
+    "lon": 79.80000000000001
+  },
+  {
+    "id": 200,
+    "state": "Bihar",
+    "district": "Patna",
+    "block": "Patna",
+    "panchayat": "Barh",
+    "block_id": "BLK_00200",
+    "lat": 26.849999999999998,
+    "lon": 79.85000000000001
+  },
+  {
+    "id": 201,
+    "state": "Karnataka",
+    "district": "Belagavi",
+    "block": "Belagavi",
+    "panchayat": "Gokak",
+    "block_id": "BLK_00201",
+    "lat": 21.9,
+    "lon": 79.9
+  },
+  {
+    "id": 202,
+    "state": "Karnataka",
+    "district": "Belagavi",
+    "block": "Belagavi",
+    "panchayat": "Chikkodi",
+    "block_id": "BLK_00202",
+    "lat": 21.95,
+    "lon": 79.95
+  },
+  {
+    "id": 203,
+    "state": "Karnataka",
+    "district": "Belagavi",
+    "block": "Belagavi",
+    "panchayat": "Bailhongal",
+    "block_id": "BLK_00203",
+    "lat": 22.0,
+    "lon": 80.0
+  },
+  {
+    "id": 204,
+    "state": "Karnataka",
+    "district": "Belagavi",
+    "block": "Belagavi",
+    "panchayat": "Athani",
+    "block_id": "BLK_00204",
+    "lat": 22.049999999999997,
+    "lon": 80.05000000000001
+  },
+  {
+    "id": 205,
+    "state": "Karnataka",
+    "district": "Belagavi",
+    "block": "Belagavi",
+    "panchayat": "Khanapur",
+    "block_id": "BLK_00205",
+    "lat": 22.099999999999998,
+    "lon": 80.10000000000001
+  },
+  {
+    "id": 206,
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "block": "Coimbatore",
+    "panchayat": "Pollachi",
+    "block_id": "BLK_00206",
+    "lat": 22.15,
+    "lon": 80.15
+  },
+  {
+    "id": 207,
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "block": "Coimbatore",
+    "panchayat": "Sulur",
+    "block_id": "BLK_00207",
+    "lat": 22.2,
+    "lon": 80.2
+  },
+  {
+    "id": 208,
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "block": "Coimbatore",
+    "panchayat": "Mettupalayam",
+    "block_id": "BLK_00208",
+    "lat": 22.25,
+    "lon": 80.25
+  },
+  {
+    "id": 209,
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "block": "Coimbatore",
+    "panchayat": "Annur",
+    "block_id": "BLK_00209",
+    "lat": 22.299999999999997,
+    "lon": 80.30000000000001
+  },
+  {
+    "id": 210,
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "block": "Coimbatore",
+    "panchayat": "Kinathukadavu",
+    "block_id": "BLK_00210",
+    "lat": 22.349999999999998,
+    "lon": 80.35000000000001
+  }
+]

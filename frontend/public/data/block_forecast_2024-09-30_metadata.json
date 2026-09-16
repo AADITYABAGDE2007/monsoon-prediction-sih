@@ -1,0 +1,10 @@
+{
+  "forecast_date": "2024-09-30",
+  "blocks": 7123,
+  "crs": "EPSG:4326",
+  "risk_distribution": {
+    "VERY LOW": 7123
+  },
+  "source_forecast": "/content/gdrive/MyDrive/monsoon-prediction-sih/forecast/predictions/block_forecast_2024-09-30_risk.parquet",
+  "source_boundary": "/content/gdrive/MyDrive/monsoon-prediction-sih/data/processed/boundaries/LGD_Blocks_clean.geojson"
+}

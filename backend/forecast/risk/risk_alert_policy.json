@@ -1,0 +1,49 @@
+{
+  "policy_name": "SIH26086_Risk_Alert_Decision_Layer",
+  "policy_version": "risk-alert-v1.0",
+  "created_at_utc": "2026-09-16T13:20:16.248156+00:00",
+  "input_artifact": "forecast/production_engine/production_forecast_2025-09-30.parquet",
+  "model_version": "xgboost-frozen-production",
+  "calibration_version": "2022-isotonic-frozen",
+  "engine_version": "1.0.0",
+  "probabilities_modified": false,
+  "decision_scores": {
+    "onset_risk_score": {
+      "formula": "0.40 * onset_7d_probability + 0.60 * onset_14d_probability",
+      "interpretation": "Operational onset signal; not a calibrated probability."
+    },
+    "break_risk_score": {
+      "formula": "0.40 * break_7d_probability + 0.60 * break_14d_probability",
+      "interpretation": "Operational break signal; not a calibrated probability."
+    },
+    "combined_monsoon_risk": {
+      "formula": "0.55 * (1 - onset_risk_score) + 0.45 * break_risk_score",
+      "interpretation": "Operational decision score; NOT a probability."
+    }
+  },
+  "alert_thresholds": {
+    "GREEN": "< 0.40",
+    "YELLOW": "0.40 - < 0.60",
+    "ORANGE": "0.60 - < 0.80",
+    "RED": ">= 0.80"
+  },
+  "confidence_policy": {
+    "LOW": [
+      "WARNING",
+      "DEGRADED",
+      "OUT_OF_DOMAIN",
+      "ZERO_REGION",
+      "BELOW_DOMAIN",
+      "ABOVE_DOMAIN"
+    ],
+    "NORMAL": "No calibration warning status detected."
+  },
+  "scientific_safety": [
+    "Frozen XGBoost models are not modified.",
+    "Frozen calibration artifacts are not modified.",
+    "Original calibrated probabilities are preserved.",
+    "No probability rescaling is performed.",
+    "Decision scores are explicitly labeled as operational scores.",
+    "Calibration warnings are exposed rather than hidden."
+  ]
+}
