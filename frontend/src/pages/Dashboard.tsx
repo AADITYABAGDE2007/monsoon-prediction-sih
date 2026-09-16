@@ -14,7 +14,13 @@ import {
   Calendar,
   AlertTriangle,
   Sprout,
-  ArrowRight
+  ArrowRight,
+  Flame,
+  Snowflake,
+  Coins,
+  CheckCircle2,
+  AlertOctagon,
+  Sparkles
 } from 'lucide-react';
 import { 
   ResponsiveContainer, 
@@ -61,6 +67,51 @@ export default function Dashboard() {
 
   if (!data) return null;
 
+  // 1. Smart Irrigation Calculation
+  const onsetProb = data?.kpis?.onset_probability || 0;
+  const breakProb = data?.kpis?.break_probability || 0;
+  const heavyRainProb = data?.kpis?.heavy_rain_risk || 0;
+  const currentRain = liveWeather?.current?.current_rain_mm || 0;
+  const currentTemp = liveWeather?.current?.temperature_c || 28;
+
+  let irrigationAdvice = {
+    type: 'HOLD',
+    title: lang === 'en' ? '🛑 Hold Irrigation Today!' : '🛑 आज सिंचाई रोकें (Hold Irrigation)!',
+    badge: lang === 'en' ? 'Rain Expected Soon' : 'वर्षा की उच्च संभावना',
+    desc: lang === 'en' 
+      ? `High probability of rainfall (${onsetProb}%) expected in ${location.block} within the next 24–48 hours. Keep tube-well off and utilize natural rain.` 
+      : `अगले 24–48 घंटों में आपके ${location.block} ब्लॉक में बारिश की ${onsetProb}% संभावना है। ट्यूबवेल बंद रखें और प्राकृतिक वर्षा का लाभ उठाएं।`,
+    savings: lang === 'en' ? '₹350 – ₹500 Saved (Fuel / Power)' : 'लगभग ₹350 – ₹500 की सीधी बचत (डीजल / बिजली)',
+    theme: 'bg-amber-500/10 border-amber-500/30 text-amber-900',
+    btnColor: 'bg-amber-600 hover:bg-amber-700'
+  };
+
+  if (currentRain > 5 || onsetProb >= 70 || heavyRainProb >= 35) {
+    irrigationAdvice = {
+      type: 'HOLD',
+      title: lang === 'en' ? '🛑 Do NOT Irrigate Today!' : '🛑 आज बिल्कुल भी पानी न दें!',
+      badge: lang === 'en' ? 'Heavy Rain Expected' : 'भारी वर्षा की संभावना',
+      desc: lang === 'en'
+        ? `Heavy precipitation forecasted. Irrigating now will cause waterlogging and root rot. Ensure drainage channels are clear.`
+        : `खेत में भारी बारिश के आसार हैं। अभी सिंचाई करने से खेत में पानी भरने (जलभराव) और जड़ गलन का खतरा होगा। जल निकासी नालियां साफ रखें।`,
+      savings: lang === 'en' ? '₹400 – ₹600 Saved (Fuel & Labour)' : 'लगभग ₹400 – ₹600 की बचत (ईंधन और मेहनत)',
+      theme: 'bg-emerald-500/10 border-emerald-500/30 text-emerald-900',
+      btnColor: 'bg-emerald-600 hover:bg-emerald-700'
+    };
+  } else if (onsetProb < 30 && breakProb > 45) {
+    irrigationAdvice = {
+      type: 'IRRIGATE',
+      title: lang === 'en' ? '💧 Irrigate This Evening (Light Watering)' : '💧 आज शाम हल्की सिंचाई करें!',
+      badge: lang === 'en' ? 'Dry Spell Active' : 'शुष्क मौसम सक्रिय',
+      desc: lang === 'en'
+        ? `No rain expected for next 4–5 days. Water crops after 5:00 PM to avoid rapid evaporation and prevent crop wilting.`
+        : `अगले 4–5 दिनों तक बारिश की संभावना नहीं है। वाष्पीकरण रोकने और फसल को सूखने से बचाने हेतु शाम 5 बजे के बाद हल्की सिंचाई करें।`,
+      savings: lang === 'en' ? 'Yield Protection Alert' : 'फसल को सूखने व नमी तनाव से सुरक्षा',
+      theme: 'bg-blue-500/10 border-blue-500/30 text-blue-900',
+      btnColor: 'bg-blue-600 hover:bg-blue-700'
+    };
+  }
+
   return (
     <div className="p-6 md:p-8 space-y-6 max-w-7xl mx-auto">
       
@@ -95,6 +146,42 @@ export default function Dashboard() {
           {lang === 'en' ? 'Change Location' : 'स्थान बदलें'}
           <ChevronRight className="h-3.5 w-3.5" />
         </Link>
+      </div>
+
+      {/* 1. DAILY SMART IRRIGATION ADVISOR (Kisan Daily Driver) */}
+      <div className={`p-5 rounded-2xl border ${irrigationAdvice.theme} shadow-sm relative overflow-hidden transition-all`}>
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div className="space-y-1.5 flex-1">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs font-black tracking-wide uppercase px-2.5 py-0.5 rounded-full bg-slate-900 text-white flex items-center gap-1">
+                <Sparkles className="h-3 w-3 text-cyan-400" />
+                {lang === 'en' ? 'DAILY IRRIGATION DECISION' : 'दैनिक सिंचाई निर्णय'}
+              </span>
+              <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-white/80 border border-slate-200">
+                {irrigationAdvice.badge}
+              </span>
+              <span className="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full flex items-center gap-1 border border-emerald-300">
+                <Coins className="h-3 w-3" />
+                {irrigationAdvice.savings}
+              </span>
+            </div>
+
+            <h3 className="text-lg md:text-xl font-black text-slate-900 tracking-tight">
+              {irrigationAdvice.title}
+            </h3>
+            <p className="text-xs md:text-sm text-slate-700 leading-relaxed max-w-3xl">
+              {irrigationAdvice.desc}
+            </p>
+          </div>
+
+          <Link
+            to="/advisory"
+            className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-md transition whitespace-nowrap"
+          >
+            <span>{lang === 'en' ? 'View Crop Advisory' : 'विस्तृत फसल सलाह देखें'}</span>
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
       </div>
 
       {/* Monsoon Status Banner */}
@@ -141,6 +228,55 @@ export default function Dashboard() {
             </span>
           </div>
         </div>
+      </div>
+
+      {/* ALL-WEATHER SEASON GUARD: Garmi (लू / Heatwave) & Thand (पाला / Cold Wave) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        {/* Heatwave Card (गर्मी / लू) */}
+        <div className="bg-amber-50/70 border border-amber-200 rounded-2xl p-4 flex items-start gap-3.5 shadow-sm">
+          <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-600 flex-shrink-0">
+            <Flame className="h-6 w-6" />
+          </div>
+          <div className="space-y-1 text-xs">
+            <div className="flex items-center gap-2">
+              <span className="font-extrabold text-amber-900 text-sm">
+                {lang === 'en' ? 'Summer Heatwave Advisory (लू अलर्ट)' : 'ग्रीष्मकालीन लू व ताप सुरक्षा (Heatwave)'}
+              </span>
+              <span className="px-1.5 py-0.5 rounded bg-amber-200 text-amber-800 text-[10px] font-bold">
+                March–June
+              </span>
+            </div>
+            <p className="text-slate-600 leading-relaxed">
+              {lang === 'en'
+                ? 'When temperatures cross 38°C, apply straw mulching around vegetable & pre-kharif crops to lock soil moisture. Avoid daytime pesticide sprays.'
+                : 'तापमान 38°C से ऊपर जाने पर खेत में पुआल/मल्चिंग बिछाएं जिससे नमी न उड़े। दोपहर की धूप में कीटनाशक का छिड़काव न करें।'}
+            </p>
+          </div>
+        </div>
+
+        {/* Cold Wave & Frost Card (ठंड / पाला) */}
+        <div className="bg-sky-50/70 border border-sky-200 rounded-2xl p-4 flex items-start gap-3.5 shadow-sm">
+          <div className="p-2.5 rounded-xl bg-sky-500/10 text-sky-600 flex-shrink-0">
+            <Snowflake className="h-6 w-6" />
+          </div>
+          <div className="space-y-1 text-xs">
+            <div className="flex items-center gap-2">
+              <span className="font-extrabold text-sky-900 text-sm">
+                {lang === 'en' ? 'Winter Frost Alert (पाला व शीतलहर)' : 'शीतकालीन पाला एवं शीतलहर सुरक्षा (Frost)'}
+              </span>
+              <span className="px-1.5 py-0.5 rounded bg-sky-200 text-sky-800 text-[10px] font-bold">
+                Nov–Feb
+              </span>
+            </div>
+            <p className="text-slate-600 leading-relaxed">
+              {lang === 'en'
+                ? 'Risk of ground frost (सरसों, आलू, चना) when min temperature drops below 5°C. Create smoke at field boundaries and apply light evening irrigation.'
+                : 'न्यूनतम तापमान 5°C से नीचे जाने पर पाला पड़ने का खतरा रहता है। सरसों, आलू व चने के खेत की मेड़ों पर धुआं करें और हल्की सिंचाई दें।'}
+            </p>
+          </div>
+        </div>
+
       </div>
 
       {/* 6 Key Performance Metric Cards */}
