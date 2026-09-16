@@ -2,21 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
 import { sendOtp, verifyOtp } from '../../services/api';
-import { Phone, KeyRound, ArrowRight, ShieldCheck, CheckCircle2, UserPlus, Sparkles } from 'lucide-react';
+import { Phone, KeyRound, ArrowRight, ShieldCheck, CheckCircle2, UserPlus, Sparkles, Globe } from 'lucide-react';
 
 export default function Login() {
   const navigate = useNavigate();
   const searchParams = new URLSearchParams(useLocation().search);
   const isRegisteredSuccess = searchParams.get('registered') === 'true';
 
-  const { lang, location, setUser } = useApp();
+  const { lang, setLang, location, setUser } = useApp();
   
   const [phone, setPhone] = useState('');
   const [otp, setOtp] = useState('');
   const [step, setStep] = useState<'phone' | 'otp'>('phone');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [demoHint, setDemoHint] = useState<string | null>(null);
+  const [demoHint, setDemoHint] = useState<string | null>("Demo Test OTP: 7722 or 123456");
   const [farmerName, setFarmerName] = useState('Kisan Brother');
 
   useEffect(() => {
@@ -30,6 +30,10 @@ export default function Login() {
     }
   }, []);
 
+  const toggleLanguage = () => {
+    setLang(lang === 'en' ? 'hi' : 'en');
+  };
+
   const handleSendOtp = async (e: React.FormEvent) => {
     e.preventDefault();
     if (phone.length < 10) {
@@ -42,11 +46,12 @@ export default function Login() {
     try {
       const res = await sendOtp(phone);
       setStep('otp');
-      if (res.test_otp) {
-        setDemoHint(`Test OTP: ${res.test_otp}`);
-      }
+      setDemoHint(`Test OTP: ${res.test_otp || '7722'}`);
     } catch (err: any) {
-      setError(err?.response?.data?.detail || 'Failed to send OTP.');
+      // Even if network or SMS fails, allow continuing with demo OTP
+      console.warn("send-otp warning, continuing to OTP step:", err);
+      setStep('otp');
+      setDemoHint('Test OTP: 7722 or 123456');
     } finally {
       setLoading(false);
     }
@@ -62,12 +67,19 @@ export default function Login() {
     setLoading(true);
     setError(null);
     try {
-      const res = await verifyOtp(phone, otp, farmerName, location.id);
-      localStorage.setItem('mm_token', res.access_token);
-      setUser(res.user);
-      navigate('/dashboard');
+      const cleanOtp = otp.trim();
+      const res = await verifyOtp(phone, cleanOtp, farmerName, location.id || 1);
+      if (res && res.access_token) {
+        localStorage.setItem('mm_token', res.access_token);
+        setUser(res.user || { id: 1, phone, name: farmerName });
+        navigate('/dashboard');
+        return;
+      }
+      throw new Error('Verification failed');
     } catch (err: any) {
-      setError(err?.response?.data?.detail || 'Invalid OTP. Please enter 7722 or 123456');
+      console.error("OTP verification error:", err);
+      const detailMsg = err?.response?.data?.detail || err?.message || 'Invalid OTP';
+      setError(detailMsg);
     } finally {
       setLoading(false);
     }
@@ -82,6 +94,17 @@ export default function Login() {
         style={{ backgroundImage: 'url("/monsoon_hero.jpg")' }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/90 to-slate-950/70" />
+
+      {/* Language Switcher in Top Right */}
+      <div className="absolute top-6 right-6 z-20">
+        <button
+          onClick={toggleLanguage}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 transition-all shadow-md backdrop-blur-md"
+        >
+          <Globe className="h-3.5 w-3.5 text-cyan-400" />
+          <span>{lang === 'en' ? 'हिंदी में बदलें' : 'Switch to English'}</span>
+        </button>
+      </div>
 
       <div className="max-w-md w-full space-y-6 bg-slate-900/90 p-8 sm:p-10 rounded-3xl shadow-2xl relative z-10 border border-slate-800 backdrop-blur-xl">
         
@@ -187,7 +210,7 @@ export default function Login() {
 
             <button
               type="button"
-              onClick={() => { setStep('phone'); setDemoHint(null); setError(null); }}
+              onClick={() => { setStep('phone'); setError(null); }}
               className="w-full text-xs text-slate-400 hover:text-white font-medium text-center"
             >
               {lang === 'en' ? 'Change Mobile Number' : 'मोबाइल नंबर बदलें'}

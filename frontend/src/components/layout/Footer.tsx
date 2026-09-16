@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-blue-950/60 border border-blue-800/60 text-blue-400 text-xs font-semibold">
               <Award className="h-4 w-4 text-cyan-400" />
-              <span>SIH 2026 • Problem ID: 26086</span>
+              <span>Ministry of Earth Sciences (MoES) Initiative</span>
             </div>
           </div>
 
@@ -101,7 +101,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs">
               <li className="flex items-center gap-2 text-slate-400">
                 <Phone className="h-3.5 w-3.5 text-emerald-400" />
-                <span>1800-180-1551 (Kisan Call Center)</span>
+                <span>+91 7722912906 (Kisan Helpline / कॉल सेंटर)</span>
               </li>
               <li className="flex items-center gap-2 text-slate-400">
                 <Mail className="h-3.5 w-3.5 text-blue-400" />

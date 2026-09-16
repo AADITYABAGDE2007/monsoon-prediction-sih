@@ -15,13 +15,18 @@ import {
   ShieldCheck, 
   CheckCircle2,
   Sparkles,
-  LogIn
+  LogIn,
+  Globe
 } from 'lucide-react';
 
 export default function Register() {
   const navigate = useNavigate();
-  const { lang, setLocation } = useApp();
+  const { lang, setLang, setLocation } = useApp();
   const [step, setStep] = useState(1);
+
+  const toggleLanguage = () => {
+    setLang(lang === 'en' ? 'hi' : 'en');
+  };
 
   // Form State
   const [name, setName] = useState('');
@@ -156,6 +161,17 @@ export default function Register() {
         style={{ backgroundImage: 'url("/monsoon_hero.jpg")' }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/90 to-slate-950/70" />
+
+      {/* Language Switcher in Top Right */}
+      <div className="absolute top-6 right-6 z-20">
+        <button
+          onClick={toggleLanguage}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 transition-all shadow-md backdrop-blur-md"
+        >
+          <Globe className="h-3.5 w-3.5 text-cyan-400" />
+          <span>{lang === 'en' ? 'हिंदी में बदलें' : 'Switch to English'}</span>
+        </button>
+      </div>
 
       <div className="max-w-md w-full space-y-6 bg-slate-900/90 p-8 sm:p-10 rounded-3xl shadow-2xl relative z-10 border border-slate-800 backdrop-blur-xl">
         

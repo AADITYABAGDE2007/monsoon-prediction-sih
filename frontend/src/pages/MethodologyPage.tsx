@@ -38,7 +38,7 @@ export default function MethodologyPage() {
           AI & ML Prediction Methodology
         </h1>
         <p className="text-xs text-slate-500 mt-1">
-          Technical specifications of the hybrid physical-statistical downscaling architecture (SIH26086).
+          Technical specifications of the hybrid physical-statistical downscaling architecture.
         </p>
       </div>
 

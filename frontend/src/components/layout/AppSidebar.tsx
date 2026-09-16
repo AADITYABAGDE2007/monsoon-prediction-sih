@@ -111,7 +111,7 @@ export default function AppSidebar() {
       {/* Mini MoES Footer badge */}
       <div className="p-4 border-t border-slate-800/80 bg-slate-950/40">
         <div className="text-xs text-slate-400 font-medium">Ministry of Earth Sciences (MoES)</div>
-        <div className="text-[10px] text-slate-500 mt-0.5">NCMRWF • SIH 2026 Initiative</div>
+        <div className="text-[10px] text-slate-500 mt-0.5">NCMRWF • National Climate Initiative</div>
       </div>
     </aside>
   );

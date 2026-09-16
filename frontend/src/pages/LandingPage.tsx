@@ -13,12 +13,17 @@ import {
   TrendingUp, 
   ShieldCheck,
   UserPlus,
-  LogIn
+  LogIn,
+  Globe
 } from 'lucide-react';
 import Footer from '../components/layout/Footer';
 
 export default function LandingPage() {
-  const { lang, user } = useApp();
+  const { lang, setLang, user } = useApp();
+
+  const toggleLanguage = () => {
+    setLang(lang === 'en' ? 'hi' : 'en');
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-950 text-slate-100">
@@ -33,12 +38,18 @@ export default function LandingPage() {
             <span className="text-xl font-black bg-gradient-to-r from-white via-slate-100 to-cyan-300 bg-clip-text text-transparent">
               MonsoonMitra
             </span>
-            <span className="hidden sm:inline-block ml-2 text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-900/50 text-cyan-300 border border-cyan-500/30">
-              AI Powered
-            </span>
           </div>
 
           <div className="flex items-center gap-3">
+            {/* Language Switcher */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 transition-all shadow-md"
+            >
+              <Globe className="h-3.5 w-3.5 text-cyan-400" />
+              <span>{lang === 'en' ? 'हिंदी' : 'English'}</span>
+            </button>
+
             {user ? (
               <Link
                 to="/dashboard"
@@ -87,8 +98,8 @@ export default function LandingPage() {
               <Sparkles className="h-3.5 w-3.5 text-cyan-300 animate-pulse" />
               <span>
                 {lang === 'en' 
-                  ? 'MoES & NCMRWF • SIH 26086 Smart India Hackathon' 
-                  : 'पृथ्वी विज्ञान मंत्रालय (MoES) • स्मार्ट इंडिया हैकथॉन 2026'}
+                  ? 'Ministry of Earth Sciences (MoES) • NCMRWF Initiative' 
+                  : 'पृथ्वी विज्ञान मंत्रालय (MoES) • NCMRWF की राष्ट्रीय पहल'}
               </span>
             </div>
 
