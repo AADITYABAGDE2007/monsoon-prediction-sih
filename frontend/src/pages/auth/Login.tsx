@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
 import { sendOtp, verifyOtp } from '../../services/api';
-import { Phone, KeyRound, ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Phone, KeyRound, ArrowRight, ShieldCheck, CheckCircle2, UserPlus, Sparkles } from 'lucide-react';
 
 export default function Login() {
   const navigate = useNavigate();
+  const searchParams = new URLSearchParams(useLocation().search);
+  const isRegisteredSuccess = searchParams.get('registered') === 'true';
+
   const { lang, location, setUser } = useApp();
   
   const [phone, setPhone] = useState('');
@@ -14,6 +17,18 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [demoHint, setDemoHint] = useState<string | null>(null);
+  const [farmerName, setFarmerName] = useState('Kisan Brother');
+
+  useEffect(() => {
+    const prefill = localStorage.getItem('mm_prefill_phone');
+    const name = localStorage.getItem('mm_prefill_name');
+    if (prefill) {
+      setPhone(prefill);
+    }
+    if (name) {
+      setFarmerName(name);
+    }
+  }, []);
 
   const handleSendOtp = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,7 +62,7 @@ export default function Login() {
     setLoading(true);
     setError(null);
     try {
-      const res = await verifyOtp(phone, otp, 'Kisan Brother', location.id);
+      const res = await verifyOtp(phone, otp, farmerName, location.id);
       localStorage.setItem('mm_token', res.access_token);
       setUser(res.user);
       navigate('/dashboard');
@@ -59,36 +74,49 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative">
+    <div className="min-h-screen bg-slate-950 flex flex-col justify-center items-center py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      
+      {/* Background AI Image */}
       <div 
-        className="absolute inset-0 opacity-10 bg-cover bg-center"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1599813958932-d1ebbc1381de?auto=format&fit=crop&q=80")' }}
+        className="absolute inset-0 opacity-20 bg-cover bg-center"
+        style={{ backgroundImage: 'url("/monsoon_hero.jpg")' }}
       />
-      <div className="max-w-md w-full space-y-6 bg-white p-8 sm:p-10 rounded-3xl shadow-xl relative z-10 border border-slate-100">
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/90 to-slate-950/70" />
+
+      <div className="max-w-md w-full space-y-6 bg-slate-900/90 p-8 sm:p-10 rounded-3xl shadow-2xl relative z-10 border border-slate-800 backdrop-blur-xl">
         
         <div className="text-center">
-          <div className="inline-flex p-3 rounded-2xl bg-blue-50 text-blue-600 mb-3">
+          <div className="inline-flex p-3 rounded-2xl bg-blue-500/10 border border-blue-500/30 text-cyan-400 mb-3">
             <ShieldCheck className="h-8 w-8" />
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-            {lang === 'en' ? 'Kisan Mobile Login' : 'किसान मोबाइल लॉगिन'}
+          <h2 className="text-2xl sm:text-3xl font-black text-white">
+            {lang === 'en' ? 'Kisan Secure Login' : 'किसान सुरक्षित लॉगिन'}
           </h2>
-          <p className="mt-1 text-xs text-slate-500">
+          <p className="mt-1 text-xs text-slate-400">
             {step === 'phone' 
-              ? (lang === 'en' ? 'Enter mobile number for instant OTP verification' : 'त्वरित OTP सत्यापन के लिए मोबाइल नंबर दर्ज करें')
-              : (lang === 'en' ? `Enter the verification code sent to ${phone}` : `${phone} पर भेजा गया सत्यापन कोड दर्ज करें`)}
+              ? (lang === 'en' ? 'Login via OTP to view Dashboard & Alerts' : 'डैशबोर्ड और अलर्ट देखने के लिए OTP से लॉगिन करें')
+              : (lang === 'en' ? `Enter the verification code sent to ${phone}` : `${phone} पर भेजा गया 4-अंकीय कोड दर्ज करें`)}
           </p>
         </div>
 
+        {isRegisteredSuccess && (
+          <div className="p-3 rounded-xl bg-emerald-950/70 text-emerald-300 text-xs font-semibold border border-emerald-800 flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0" />
+            <span>
+              {lang === 'en' ? 'Registration completed! Please send OTP to login.' : 'पंजीकरण पूरा हुआ! कृपया अब लॉगिन के लिए OTP भेजें।'}
+            </span>
+          </div>
+        )}
+
         {error && (
-          <div className="p-3 rounded-xl bg-red-50 text-red-700 text-xs font-semibold border border-red-200">
+          <div className="p-3 rounded-xl bg-red-950/60 border border-red-800 text-red-300 text-xs font-semibold">
             {error}
           </div>
         )}
 
         {demoHint && (
-          <div className="p-3 rounded-xl bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200 flex items-center gap-2">
-            <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0" />
+          <div className="p-3 rounded-xl bg-cyan-950/70 text-cyan-300 text-xs font-bold border border-cyan-800 flex items-center gap-2">
+            <Sparkles className="h-4 w-4 text-cyan-400 flex-shrink-0" />
             <span>{demoHint}</span>
           </div>
         )}
@@ -96,18 +124,18 @@ export default function Login() {
         {step === 'phone' ? (
           <form className="space-y-5" onSubmit={handleSendOtp}>
             <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase mb-1.5">
-                {lang === 'en' ? 'Mobile Number' : 'मोबाइल नंबर (10 अंक)'}
+              <label className="block text-xs font-bold text-slate-300 uppercase mb-1.5">
+                {lang === 'en' ? 'Mobile Number (10 Digits)' : 'मोबाइल नंबर (10 अंक)'}
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
-                  <Phone className="h-4 w-4 text-slate-400" />
+                  <Phone className="h-4 w-4 text-slate-500" />
                 </div>
                 <input
                   type="tel"
                   required
                   maxLength={10}
-                  className="rounded-xl block w-full pl-10 px-3 py-3 border border-slate-300 text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none text-sm font-semibold"
+                  className="rounded-xl block w-full pl-10 px-3 py-3 bg-slate-950 border border-slate-700 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm font-semibold font-mono"
                   placeholder="9876543210"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value.replace(/\D/g, ''))}
@@ -118,7 +146,7 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex justify-center py-3 px-4 text-sm font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 transition-colors shadow-md items-center gap-2 disabled:opacity-50"
+              className="w-full flex justify-center py-3.5 px-4 text-sm font-bold rounded-xl text-white bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 transition-all shadow-lg shadow-blue-500/25 items-center gap-2 disabled:opacity-50"
             >
               {loading 
                 ? (lang === 'en' ? 'Sending OTP...' : 'OTP भेजा जा रहा है...') 
@@ -128,18 +156,18 @@ export default function Login() {
         ) : (
           <form className="space-y-5" onSubmit={handleVerifyOtp}>
             <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase mb-1.5">
+              <label className="block text-xs font-bold text-slate-300 uppercase mb-1.5">
                 {lang === 'en' ? 'Enter 4 or 6-digit OTP' : 'OTP दर्ज करें'}
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
-                  <KeyRound className="h-4 w-4 text-slate-400" />
+                  <KeyRound className="h-4 w-4 text-slate-500" />
                 </div>
                 <input
                   type="text"
                   required
                   maxLength={6}
-                  className="rounded-xl block w-full pl-10 px-3 py-3 border border-slate-300 text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none text-base tracking-widest font-bold"
+                  className="rounded-xl block w-full pl-10 px-3 py-3 bg-slate-950 border border-slate-700 text-cyan-300 focus:ring-2 focus:ring-cyan-500 focus:outline-none text-base tracking-widest font-mono font-bold"
                   placeholder="7722"
                   value={otp}
                   onChange={(e) => setOtp(e.target.value)}
@@ -150,22 +178,33 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex justify-center py-3 px-4 text-sm font-bold rounded-xl text-white bg-emerald-600 hover:bg-emerald-700 transition-colors shadow-md items-center gap-2 disabled:opacity-50"
+              className="w-full flex justify-center py-3.5 px-4 text-sm font-bold rounded-xl text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 transition-all shadow-lg shadow-emerald-500/25 items-center gap-2 disabled:opacity-50"
             >
               {loading 
                 ? (lang === 'en' ? 'Verifying...' : 'सत्यापित हो रहा है...') 
-                : (lang === 'en' ? 'Verify & Login' : 'सत्यापित करें और लॉगिन करें')} <ArrowRight className="h-4 w-4" />
+                : (lang === 'en' ? 'Verify & Enter Dashboard' : 'सत्यापित करें और डैशबोर्ड खोलें')} <ArrowRight className="h-4 w-4" />
             </button>
 
             <button
               type="button"
               onClick={() => { setStep('phone'); setDemoHint(null); setError(null); }}
-              className="w-full text-xs text-slate-500 hover:text-slate-800 font-semibold text-center"
+              className="w-full text-xs text-slate-400 hover:text-white font-medium text-center"
             >
               {lang === 'en' ? 'Change Mobile Number' : 'मोबाइल नंबर बदलें'}
             </button>
           </form>
         )}
+
+        {/* Register CTA Link */}
+        <div className="pt-4 border-t border-slate-800 text-center">
+          <p className="text-xs text-slate-400">
+            {lang === 'en' ? "Don't have an account?" : 'क्या आपका खाता नहीं है?'}{' '}
+            <Link to="/register" className="text-cyan-400 hover:text-cyan-300 font-bold underline ml-1 inline-flex items-center gap-1">
+              <UserPlus className="h-3 w-3" />
+              <span>{lang === 'en' ? 'Register Village & Farm' : 'यहाँ पंजीकरण करें'}</span>
+            </Link>
+          </p>
+        </div>
 
       </div>
     </div>
