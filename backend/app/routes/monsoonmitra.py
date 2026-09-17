@@ -95,9 +95,9 @@ def get_dashboard(location_id: Optional[str] = Query(None)):
     status_desc = "Rainfall activity is currently above the defined active-phase threshold."
     rainfall_status = "Above Normal"
     
-    # 30-Day Rainfall Chart Data
+    # 30-Day Rainfall Chart Data starting from TODAY
     chart_data = []
-    base_date = datetime(2025, 6, 1)
+    base_date = datetime.now()
     for i in range(30):
         dt = base_date + timedelta(days=i)
         # Seasonal curve + seed variation
@@ -218,7 +218,7 @@ def get_forecast(location_id: Optional[str] = Query(None), days: int = Query(30)
     
     # 30-day timeline series for 4 charts
     timeline = []
-    base_date = datetime(2025, 6, 1)
+    base_date = datetime.now()
     for i in range(days):
         dt = base_date + timedelta(days=i)
         timeline.append({
